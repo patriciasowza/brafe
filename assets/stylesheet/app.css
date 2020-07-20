@@ -1,0 +1,61 @@
+/*RESET*/
+body, h1, h2, h3, p, ul {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  font-family: Georgia, serif;
+  color: #252525
+}
+
+/* Menu */
+.bf-menu {
+  background: #252525 ;
+  padding: 20px 0;
+}
+
+.bf-menu-container {
+  max-width: 960px; /* deixa responsivo */
+  margin: 0 auto; /* centraliza conteudo */
+}
+a.bf-menu-logo {
+  /* TODO <a> por padrão é um display in-line*/
+
+  display: block; /*pega o conteudo de ponta a ponta */
+  float: left;
+  margin-left: 10px;
+  
+}
+
+.bf-menu-container::after, .bf-menu-container::before {
+  /* 
+    Conceito CLEARFIX: aplicado quando não se quer 
+    definir um height para o elemento.
+    O tamanho aumenta conforme os conteúdos que estão
+    dentro do container, ou seja,automático.
+    Usando os pseudos elementos: after e before, sempre 
+    utilizando o content
+  */
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.bf-menu-nav {
+  float: right;
+  margin-right: 10px;
+}
+
+.bf-menu-nav li {
+ /*Por padrão as <li> são display-block*/
+ display: inline-block; 
+}
+
+.bf-menu-nav a {
+  display: block; 
+  padding: 10px;
+  text-decoration: none;
+  color:#fff;
+  font-size: 1.125em;
+
+}
