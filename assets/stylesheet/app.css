@@ -8,7 +8,7 @@ body {
   color: #252525
 }
 
-/* Menu */
+/* MENU */
 .bf-menu {
   background: #252525 ;
   padding: 20px 0;
@@ -56,6 +56,32 @@ a.bf-menu-logo {
   padding: 10px;
   text-decoration: none;
   color:#fff;
+  font-size: 1.125em;
+}
+/* INTRO*/
+.bf-intro {
+  background: url(../img/bg-intro.jpg) no-repeat center center;
+  background-size: cover; /*Deixa o bk responsivo "cubra toda a area"*/
+  padding: 150px 0;
+  text-align: center;
+  color: #fff;
+}
+.bf-intro h1{
+  /* <h1> por padrão é display: block */
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+.bf-intro h1::after {
+ content: '';
+ display: block;
+ width: 20px;
+ height: 4px;
+ background: #fff;
+ margin: 10px auto;
+}
+.bf-intro p {
+  font-style: italic;
   font-size: 1.125em;
 
 }
